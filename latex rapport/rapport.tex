@@ -1,0 +1,350 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in,includefoot]{geometry}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{newunicodechar}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{tabularx}
+
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[normalem]{ulem}
+\titleformat{\section}
+  {\large\bfseries\centering}
+  {\thesection}{4em}{}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\setcounter{secnumdepth}{4}
+\newunicodechar{ﬁ}{fi}
+\newunicodechar{ﬀ}{ff}
+%\usepackage[T1]{fontenc}
+\renewcommand{\baselinestretch}{1.7} 
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\contentsname}{table de matière  }
+\renewcommand{\listfigurename}{liste des figures  }
+\renewcommand{\listtablename}{liste des tableaux}
+\setcounter{section}{1}
+
+
+\pagestyle{fancy}
+\fancyhead[R]{rapport de stage}
+\begin{document}
+\pagenumbering{roman}
+
+
+\begin{center}
+\section*{Dédicaces}
+
+\end{center}
+%\addcontentsline{toc}{section}{Dédicaces}
+
+\vspace*{\fill}
+\begin{center}
+\emph{A mes parents, pour vos sacrifices, vos conseils et vos bénédictions.\\ \vspace{2\baselineskip}
+A ma soeur et mon frère, pour le soutien que vous m'avez accordé,\\ \vspace{2\baselineskip}
+A mes collègues, pour m'avoir rendu la période de stage agréable,\\ \vspace{2\baselineskip}
+A toute ma famille,\\ \vspace{2\baselineskip}
+A mes amis et à mes proches,\\ \vspace{2\baselineskip}
+A tous ceux qui ont participé à ma formation,\\ \vspace{2\baselineskip}
+A tous ceux qui m'ont aidé à réaliser ce travail.\\ \vspace{2\baselineskip}}
+\end{center}
+\begin{flushright}
+\emph{\textbf{Toute ma reconnaissance et ma gratitude...}}
+\end{flushright}
+\vspace*{\fill} 
+\newpage
+
+
+\begin{center}
+\section*{REMERCIEMENTS}\label{sec:remer}
+%\addcontentsline{toc}{section}{\numberline{}remerciements}
+\end{center}
+\vspace*{0.3in}
+
+\textbf{J} ’aimerais exprimer ma gratitude envers Monsieur Aouadi Bacem, mon encadrant au sein du General Assistance connecté. Son soutien, sa collaboration et son assistance m’ont aidée à mieux profiter de mon stage et ses conseils et orientations me furent d’une inestimable utilité.
+
+\textbf{J}e remercie également Monsieur Ben braik Ilyess, un membre de l'équipe, pour son encouragement, ses conseils bien précieux et son encadrement judicieux.
+
+
+\textbf{M}es remerciements s’adressent également aux membres du jury pour avoir accepté d’évaluer ce travail. J’espère être digne de leur intérêt.
+
+\textbf{F}inalement je remercie tous mes enseignants à l’Ecole Nationale Supérieur d’Ingénieurs de Tunis.
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{fancy}
+\fancyhead[L]{}
+\begin{center}
+\section*{INTRODUCTION GENERALE}
+\addcontentsline{toc}{section}{\numberline{}INTRODUCTION GENERALE}
+\end{center}
+\vspace*{0.3in}
+De nos jours, avec la mécanisation de tous les secteurs de l'économie et surtout de la modernisation de plus en plus poussée du trafic routier, nous assistons à une augmentation exponentielle du nombre d'accidents de la route.
+\\
+Selon les statistiques de l’observatoire national de la sécurité routière, le nombre d'accidents en 2015 a dépassé 7225. La plupart des gens trouvent des difficultés à remplir correctement le constat amiable d'accident. Il y a des autres qui ne disposent pas des sommes nécessaires pour payer les réparations de leur véhicule accidenté et même ne savent pas quel réparateur choisir et donc tombent dans  un long délai d’attente et une mauvaise qualité de réparation. \\
+c'est pour cela il faut exploiter l’émergence de technologie informatique pour aider la société à gérer ce flux d'une manière informatisée d’où la nécessité d’une application web dynamique et ergonomique.\\
+Dans ce cadre j’ai effectué un stage s'inscrit respectivement dans mon cursus , sur une mission de développement échelonnée sur une période de deux mois entre Juillet et Août 2017.\\
+Le directeur Monsieur Aouadi Bacem et sa société "General Assistance connecté"  a d'emblée suscité mon intérêt avec un projet concret lié au développement d’une application web avec une vraie solution innovante et utilisant un nouveau langage, via un Framework simplifiant la création. \\
+Dès cette première prise de contact, j'ai su que l'ambiance de travail allait être encourageante et rigoureuse, en intégrant cette structure dynamique et performante.\\
+Mes attentes par rapport à mon cursus universitaire étaient notamment de travailler en équipe, de m'adapter à différents environnements matériels et logiciels, mais aussi d'identifier les possibilités et les limites des applications de l'informatique, et enfin d'intégrer les connaissances acquises pour la résolution des problèmes rencontrés.\\
+Le projet en soi s'est orienté sur plusieurs axes de travail sur lesquels j'ai dû me focaliser :
+\begin{itemize}
+\item Planification des sprints(modules).
+\item Développement de module administration.
+\item développement de module assistance.
+\item intégration des modules et déploiment de l'application.
+\end{itemize}
+Pour ce faire, il a fallu suivre quelques étapes indispensables, préalables au déploiement du projet, en assimilant d'abord les méthodologies de travail, techniques et outils, en s'investissant à participer à de nouvelles fonctionnalités.\\
+Dans le premier chapitre, nous présenterons le cadre de notre projet et il présentera aussi notre sprint 0 ou encore la phase de préparation où nous détaillerons les technologies que nous allons manipuler tout au long de notre projet.\\
+ Le deuxième chapitre portera sur les étapes de développement.\\
+Et notre dernier chapitre sera dédié à la partie de l’intégration des module et comparaison entre les choix utilisé. Nous finirons par une conclusion générale ainsi que la proposition de quelques perspectives. 
+\cleardoublepage
+\begin{center}
+\section*{Chapitre 1 : Etat de l’art}
+\addcontentsline{toc}{section}{\numberline{}Chapitre 1 : Etat de l’art}
+\end{center}
+\subsection{Introduction}
+Le présent chapitre est consacré en un premier lieu à la présentation de l’entreprise d’accueil dans laquelle nous avons eﬀectué notre projet de fin d’étude.\\ En deuxième lieu, nous eﬀectuons une étude de l’existant et nous dégageons les défaillances. En troisième lieu, nous présentons notre solution dont le but de remédier à ses limites. En quatrième lieu nous dégageons les besoins fonctionnels et non fonctionnels ainsi que le backlog de produit suivi par la planification des releases et nous terminons par une présentation des technologies et des outils de développement.
+\subsection{Présentation de l’organisme d’accueil: Général Assistance Connecté}
+Notre stage se déroule au sein de la société Général Assistance Connecté.
+Dans la section qui suit, nous allons donner une description légère de l’entreprise, ses missions ainsi que ses secteurs d’activités.  
+\subsubsection{Présentation du Général Assistance Connecté }
+Général Assistance Connecté est une entreprise d’ingénierie et de services informatique tunisienne. Elle s’est installée à Tunis depuis 2015 et elle compte actuellement moins de 20 employés.\\ Elle est la filiale informatique du groupe Générale Assistance, forte d'un double positionnement d'éditeur de logiciels informatiques, et également de prestataires de service aussi bien dans l'ingénierie logicielle que dans l'administration Système \& réseaux.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=1.75in]{gacLogo.png}
+\caption[Figure1 : Logo de la société]{Logo de la société}
+\label{fig:pic1}
+\end{figure}
+\subsubsection{Les missions de Général Assistance Connecté }
+Les missions du Général Assistance Connecté sont : 
+\begin{itemize}
+\item Mise à disposition de ressources informatiques compétentes sur les nouvelles technologies,
+\item Installation, administration et sécurisation du système et réseau informatique,
+\item Développement web et mobile spécifiques aux besoins métiers du client,
+\item Développement Back-End, Front-End, Full Stack en utilisant les langages et technologies de pointe.
+\end{itemize}
+Le secteur d'activité est :
+
+\begin{itemize}
+\item Assurance
+\end{itemize}
+\cleardoublepage
+\subsection{Description du contexte du projet}
+\subsubsection{Etude de système existant}
+L’étude de l’existant est une phase importante pour bien comprendre l'application web et dégager ces fonctionnalités et ces différents points faibles, ce site est consacré pour le groupe Générale Assistance. Il faut signaler que Générale Assistance joue un véritable rôle culturel en participant au développement des services d’assistance aux personnes par la conception de nouvelles prestations répondants aux besoins évolutifs des clients.\\
+Aussi,le groupe xploitee les nouvelles technologies d’information et de communication pour améliorer les procédures de gestion des sinistres automobile, habitation et santé en maîtrisant leurs coûts.. Le présent site web assure et simplifie les services précédemment cité d’une manière informatisé.
+\subsubsection{Critique de l’existant}
+Vu le grand nombre de demande d'assurance et de collaborateur, le projet doit être un site de qualité (efficace, fiable, compatible, séduisant…) et permet de satisfaire les cibles pour lesquelles le site est conçu, mais dans notre cas, la Template utilisée par le site n’est pas ergonomique et parfois les informations ne sont pas bien lisibles ainsi que le chargement de quelque page prendre un temps cela à cause de l'emploi excessif d'images ou d'animations et l’absence d’un menu fixe qui permette d'atteindre les pages principales du site quel que soit la page chargée.
+\subsubsection{Problématique}
+Le client de la société veut satisfaire les cibles pour lesquelles le site est conçu et s’adapter aux utilisateurs en améliorant les services offertes mais le problème c’est que le taux de traitement est important et la méthode utilisé est lente et n'est pas performante, d’où le besoin de migrer le site en intégrant un nouveau design et corrigeant les bugs, de développer les modules complémentaires pour améliorer les services.
+\subsubsection{Présentation de la solution proposée}
+Dans un souci de migrer le site web de notre client vers une nouvelle version plus ergonomique et ne présentant pas de bug,  notre solution proposée se résume ainsi dans les fonctionnalités suivantes :
+\begin{itemize}
+\item Migration de site web
+\item Développement des modules complémentaires
+\end{itemize}
+\cleardoublepage
+\subsection{Langage et Méthodologie de la conception}
+La méthodologie est une démarche organisée rationnellement pour aboutir à un résultat.
+Parmi les différentes méthodologies existantes, nous pouvons citer le modèle en cascade utilisé souvent dans les projets simples dont les besoins sont clairs et bien définis dès le début, le modèle en y utiliser pour le développement des applications mobiles, ainsi que le processus unifié et les méthodologies agiles (Scrum \& extrême programming) caractérisées par leurs souplesses et utilisées dans des grands projets.
+Pour bien conduire notre projet et nous assurer du bon déroulement des différentes phases, nous avons opté Scrum comme une méthodologie de conception et de développement.\\
+Après le choix de la méthodologie, nous avons besoins, d’un langage de modélisation unifiée pour la modélisation de notre projet. Pour concevoir notre système, nous avons choisi UML\footnote{Unified Modeling Language}  comme un langage de modélisation.
+Notre choix s'est basé sur les points forts de ce langage notamment sa standardisation et les divers diagrammes qu’il propose. Aussi UML présente le meilleur outil pour schématiser des systèmes complexes sous un format graphique et textuel simplifié et normalisé.
+En effet, UML n'est ni un processus ni une démarche, d'où il fallait choisir une méthodologie de conception et de développement que nous devons l'adopter.
+\subsubsection{Pourquoi Scrum}
+\guillemotleft Scrum signifie mêlée au rugby. Scrum utilise les valeurs et l’esprit du rugby et les adapte aux projets de développement. Comme le pack lors d’un ballon porté au rugby, l’équipe chargée du développement travaille de façon collective, soudée vers un objectif précis. Comme un demi de mêlée, le Scrum Master aiguillonne les membres de l’équipe, les repositionne dans la bonne direction et donne le tempo pour assurer la réussite du projet. \guillemotright [1]\\
+Scrum est issu des travaux de deux des signataires du Manifeste Agile\footnote{Le manifeste agile est un texte rédigé et signé en 2001 par 17 experts dans le domaine de développement d’applications informatique.}, Ken Schwaber et Jeff Sutherland, au début des années 1990. Il appartient à la famille des méthodologies itératives et incrémentales et repose sur les principes et les valeurs agiles.\\
+Le plus souvent, les experts de Scrum, même ses fondateurs, le décrivent comme un cadre ou un patron de processus orienté gestion de projet et qui peut incorporer différentes méthodes ou pratiques d’ingénierie.
+\cleardoublepage
+S’il est difficile de définir la nature de Scrum, sa mise en place est beaucoup plus simple et peut être résumée par la Figure \ref{fig:pic2}. Le principe de base de Scrum est le suivant :
+\begin{itemize}
+\item[$\ast$] Dégager dans un premier lieu le maximum des fonctionnalités à réaliser pour former le backlog du produit,
+\item[$\ast$] En second lieu définir les priorités des fonctionnalités et choisir lesquelles seront réalisé dans chaque itération,
+\item[$\ast$]Par la suite focaliser l'équipe de façon itérative sur l’ensemble de fonctionnalités à réaliser, dans des itérations appelées Sprints,
+\item[$\ast$]Un Sprint aboutit toujours sur la livraison d’un produit partiel fonctionnel appelé incrément.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[height=2.5in]{methode-scrum.jpg}
+\caption[Figure2 : Le processus Scrum]{Le processus Scrum[2]}
+\label{fig:pic2}
+\end{figure}
+Le choix de Scrum comme une méthodologie de pilotage pour notre projet s’est basé sur les atouts de ce dernier. Il se résume comme suit:
+\begin{itemize}
+\item Plus de souplesse et de réactivité,
+\item La grande capacité d’adaptation au changement grâce à des itérations courtes,
+\item La chose la plus importante, c’est que Scrum rassemble les deux cotés théorique et pratique et se rapproche beaucoup de la réalité.
+
+\end{itemize}
+\cleardoublepage
+\subsubsection{Pilotage du projet avec Scrum}
+\paragraph{Planification d’un projet par Scrum}
+\uline{Planification du sprint} : Elle s’appuie sur la planification de la « release » réalisée en pente. La première réunion du sprint ne se limite pas à planifier, on y trouve les activités suivantes :
+\begin{enumerate}
+\item Valider les \guillemotleft stories\guillemotright du Backlog pris en compte dans le sprint, concevoir les solutions.
+\item Identifier et estimer les tâches.
+\item Prise des tâches par chacun des membres de l’équipe …
+\end{enumerate}
+\uline{Revue du sprint} : Elle permet de montrer les résultats du développement effectués au cours du sprint, seule une version opérationnelle est montrée.\\
+\uline{Rétrospective} : Elle est faite en interne en équipe (avec la présence du Scrum Master), l’objectif est de comprendre ce qui n’a pas bien fonctionné dans le sprint, les erreurs commises et de prendre des décisions pour procéder aux améliorations.\\
+\uline{Scrum quotidien} : il s’agit d’une réunion de synchronisation de l’équipe de développement qui se fait debout en 15 minutes maximum au cours de laquelle chacun répond principalement à 3 questions :
+\begin{enumerate}
+\item Qu’est-ce que j’ai fait hier ?
+\item Qu’est-ce que je ferai aujourd’hui ?
+\item Quels obstacles me retardent ?
+\end{enumerate}
+\paragraph{Equipe et rôles}
+\guillemotleft L’équipe a un rôle capital dans Scrum : elle est constituée dans le but d’optimiser la flexibilité et la productivité; pour cela, elle s’organise elle-même et doit avoir toutes les compétences nécessaires au développement du produit. Elle est investie avec le pouvoir et l’autorité pour faire ce qu’elle a à faire \guillemotright \footnote{C. Aubry, SCRUM le guide pratique de la méthode agile la plus populaire, Dunod, 2010.}\\
+Bref, Scrum définit trois rôles qui sont : 
+\cleardoublepage
+\textbf{Le Product Owner (le propriétaire du produit)} : c’est une personne qui porte la vision du produit à réaliser, généralement c’est un expert dans le domaine.\\
+
+\textbf{Le Scrum Master (le directeur de produit) } : c'est la personne qui doit assurer le bon déroulement des différents sprints du release, et qui doit impérativement maitriser Scrum. \\
+
+\textbf{Le Scrum Team (l’équipe de Scrum)} : constitué des personnes qui seront chargées d’implémenter les différents besoins du client. Bien évidemment, cette équipe sera constituée des développeurs, des testeurs, etc.\\
+Dans le contexte de notre projet, M. Aouadi Bessem sera le directeur de produit, et M. Toukebri Mohamed Arbi sera le propriétaire et moi Choubani Amir  je forme le membre de l’équipe Scrum.
+\subsection{Planification et architecture du projet}
+\subsubsection{Capture des besoins}
+Nous procéderons par l’identification des acteurs puis la description des histoires utilisateurs du futur système
+\paragraph{Identification des acteurs}
+Nous avons identifié trois acteurs principaux de notre projet à savoir :
+\begin{enumerate}
+\item[$\bullet$] Le super-administrateur
+\item[$\bullet$] L'administrateur( Utilisateur normal,employé dans la societé)
+\end{enumerate}
+\begin{table}[H]
+\centering
+\label{tab:tab1} 
+ \begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\bfseries{ Acteur} &\bfseries{ Définition} &\bfseries{ Rôle} \\ \hline
+Le super-administrateur& Il s’agit de la personne qui possède toute les permissions sur le système. &Il est responsable de la gestion interne des profils.\\
+\hline
+L'utilisateur normal & Il s'agit de la personne qui possède des permissions bien spécifiques & Il peut utiliser toutes les fonctionnalités de l'application sauf l'ajout d'un autre administrateur et la consultation de l'historique de connexion.\\
+\hline
+\end{tabularx}
+\caption[tableau1 : les acteurs principaux]{les acteurs principaux}
+\end{table}
+\subsubsection{Les besoins fonctionnels}
+\guillemotleft Les besoins fonctionnels expriment une action que doit effectuer le système en réponse à une demande (sorties qui sont produites pour un ensemble donné d’entrées \guillemotright. [3] \\
+Dans ce qui suit, nous décrivons les besoins fonctionnels de notre projet appelés dans Scrum : \\ \guillemotleft User stories \guillemotright.
+\begin{enumerate}
+\item [$\bullet$] \textbf{Le projet permet au super-admin de :} 
+	\begin{enumerate}
+	 \item [$\ast$] \uline{S’authentifier :}
+	 	\begin{enumerate}
+     		\item [\textendash]Se connecter à travers un login et un mot de passe en tant que super-admin.
+		\end{enumerate}
+	\item [$\ast$] \uline{Changer ces informations personnelles :}
+		\begin{enumerate}
+     		\item [\textendash]Changer ses informations personnelles à savoir nom, prénom, mot de passe…etc en cas de besoin.
+		\end{enumerate}
+	\item [$\ast$] \uline{Gestion des rôles :}
+		\begin{enumerate}
+     		\item [\textendash]Affecter des modifications sur les rôles en ajoutant un nouveau en cas des besoins ou bien en modifiant les profils.
+		\end{enumerate}    
+	\item [$\ast$] \uline{Gestion des utilisateurs :}
+		\begin{enumerate}
+     		\item [\textendash] Ajouter,supprimer ou bien modifier le compte d'un utilisateur en remplissant un formulaire. 
+		\end{enumerate}	
+	\item [$\ast$] \uline{Gestion des contrats :}
+		\begin{enumerate}
+     		\item [\textendash] Ajouter,supprimer,bloquer,débloquer ou bien modifier un contrat en remplissant un formulaire. 
+		\end{enumerate}
+	\item [$\ast$] \uline{Gestion des assurés :}
+		\begin{enumerate}
+     		\item [\textendash] Ajouter,supprimer ou bien modifier le profil d'un assuré en remplissant un formulaire. 
+		\end{enumerate}
+	\item [$\ast$] \uline{Gestion des marques de voitures :}
+		\begin{enumerate}
+     		\item [\textendash] Ajouter ou bien modifier les marques des voitures en remplissant un formulaire. 
+		\end{enumerate}
+	\item [$\ast$] \uline{Gestion des types de services :}
+		\begin{enumerate}
+     		\item [\textendash] Ajouter,supprimer ou bien modifier un type de service en remplissant un formulaire. 
+		\end{enumerate}
+	\item [$\ast$] \uline{Gestion des remorqueurs :}
+		\begin{enumerate}
+     		\item [\textendash] Ajouter,supprimer,bloquer,débloquer ou bien modifier un remorqueur en remplissant un formulaire. 
+		\end{enumerate}
+	\item [$\ast$] \uline{Gestion des packs :}
+		\begin{enumerate}
+     		\item [\textendash] Ajouter,supprimer,bloquer,débloquer ou bien modifier un pack en remplissant un formulaire.
+ Un pack contient un nombre maximum de kilométrage et de service.Un contrat peut avoir un ou plusieurs packs. 
+		\end{enumerate}
+	\end{enumerate}
+\item [$\bullet$] \textbf{Le projet permet à l'utilisateur normal de :} 
+	\begin{enumerate}
+	 	\item [$\ast$] Faire toutes les fonctionnalitées offertes au super-admin sauf la gestion des profiles. 
+	\end{enumerate}	
+
+\end{enumerate}
+\subsubsection{Les besoins non fonctionnels}
+\guillemotleft Il s’agit des besoins qui caractérisent le système. Ce sont des besoins en matière de performance, de type de matériel ou le type de conception. Ces besoins peuvent concerner les contraintes d’implémentation (langage de programmation, type SGBD.) \guillemotright.[4]\\
+Les besoins non fonctionnels de notre système, appelés dans Scrum «Technical Stories», se décrivent comme suit :
+\begin{enumerate}
+\item [$\bullet$] \textbf{Contraintes ergonomiques}
+	\begin{enumerate}
+     		\item [\textendash] La navigation entre les interfaces de notre future site web doit être légère et fluide.
+     		\item [\textendash] Les interfaces de notre future application doivent être simples et homogènes.
+     		\item [\textendash] L’utilisateur doit être guidé lors de la saisie de certaines informations, afin de respecter les formats des champs de notre base de données.
+     \end{enumerate} 
+\item [$\bullet$] \textbf{Contraintes techniques} 
+	\begin{enumerate}
+     		\item [\textendash] Les mots de passe doivent être cryptés au niveau de la base de données afin de garder sécurisé l’accès à l’espace administration.
+     		\item [\textendash] Les requêtes doivent être optimisées afin d’assurer un temps de réponse minimal.
+     		
+     \end{enumerate}  
+\end{enumerate}
+\subsubsection{Backlog de produit}
+Le Backlog produit est utilisé pour planifier la release et aussi à chaque sprint, lors de la réunion de planification du sprint pour décider du sous-ensemble qui sera réalisé. Ses éléments sont classés par ordre de priorité ce qui permet de définir l’ordre de réalisation.
+Pour chaque user story on identifie le rang, l’estimation, l'importance et la description.\\
+\textbf{Rang} : Pour les user stories ayant la même priorité, un rang est assigné pour indiquer l'ordre dans lequel l'équipe doit les implémenter.\\
+\textbf{Estimation} : Sert à estimer l’effort nécessaire à une équipe pour implémenter une fonctionnalité. Elle prend en compte l’effort pour le développement.\\
+\textbf{Importance} : C’est un nombre qu'attribue le product owner à l'histoire : plus l'importance est grande, plus l'histoire devra être traitée en priorité.\\
+\textbf{Priorité} : Le product Owner classe les user story par ordre de priorité dans le Backlog produit en travaillant avec le client pour savoir ce qui est important pour lui.\\
+\textbf{Description} : Elle permet de décrire les user stories. Généralement, pour rendre ce nom explicite, une bonne façon de procéder est d'utiliser le Template suivant :  \guillemotleft En tant que X, je veuxY, afin de... \guillemotright. \\
+Le tableau décrit le product backlog de notre projet.
+ering
+\begin{table}[H]
+\centering
+\label{tab:tab2} 
+ \begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\bfseries{ Id} &\bfseries{ Nom} &\bfseries{ Rôle} \\ \hline
+Le super-administrateur& Il s’agit de la personne qui possède toute les permissions sur le système. &Il est responsable de la gestion interne des profils.\\
+\hline
+L'utilisateur normal & Il s'agit de la personne qui possède des permissions bien spécifiques & Il peut utiliser toutes les fonctionnalités de l'application sauf l'ajout d'un autre administrateur et la consultation de l'historique de connexion.\\
+\hline
+\end{tabularx}
+\caption[tableau2 : Backlog de produit]{Backlog de produit}
+\end{table}
+\cleardoublepage
+\bibliographystyle{unsrt}
+\begin{thebibliography}{1}
+\bibitem{1} \textcolor{blue}{\url{https://developers.google.com/places/javascript/?hl=fr}} consulté le 12/08/17
+\bibitem{2} \textcolor{blue}{\url{ http://ineumann.developpez.com/tutoriels/alm/agile_scrum/ }} consulté le 12/08/17
+\bibitem{3} \textcolor{blue}{\url{http://www.redcad.org/members/tarak.chaari/cours/coursUML.pdf }} consulté le 13/08/17
+\bibitem{4} \textcolor{blue}{\url{http://www.redcad.org/members/tarak.chaari/cours/coursUML.pdf }} consulté le 13/08/17
+\end{thebibliography}
+
+\end{document}

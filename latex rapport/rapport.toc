@@ -1,0 +1,22 @@
+\contentsline {section}{\hbox to\@tempdima {\hfil }INTRODUCTION GENERALE}{1}{Doc-Start}
+\contentsline {section}{\hbox to\@tempdima {\hfil }Chapitre 1 : Etat de l\IeC {\textquoteright }art}{3}{Doc-Start}
+\contentsline {subsection}{\numberline {1.1}Introduction}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Pr\IeC {\'e}sentation de l\IeC {\textquoteright }organisme d\IeC {\textquoteright }accueil: G\IeC {\'e}n\IeC {\'e}ral Assistance Connect\IeC {\'e}}{3}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Pr\IeC {\'e}sentation du G\IeC {\'e}n\IeC {\'e}ral Assistance Connect\IeC {\'e} }{3}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Les missions de G\IeC {\'e}n\IeC {\'e}ral Assistance Connect\IeC {\'e} }{4}{subsubsection.1.2.2}
+\contentsline {subsection}{\numberline {1.3}Description du contexte du projet}{5}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Etude de syst\IeC {\`e}me existant}{5}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Critique de l\IeC {\textquoteright }existant}{5}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3}Probl\IeC {\'e}matique}{5}{subsubsection.1.3.3}
+\contentsline {subsubsection}{\numberline {1.3.4}Pr\IeC {\'e}sentation de la solution propos\IeC {\'e}e}{5}{subsubsection.1.3.4}
+\contentsline {subsection}{\numberline {1.4}Langage et M\IeC {\'e}thodologie de la conception}{7}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Pourquoi Scrum}{7}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Pilotage du projet avec Scrum}{9}{subsubsection.1.4.2}
+\contentsline {paragraph}{\numberline {1.4.2.1}Planification d\IeC {\textquoteright }un projet par Scrum}{9}{paragraph.1.4.2.1}
+\contentsline {paragraph}{\numberline {1.4.2.2}Equipe et r\IeC {\^o}les}{9}{paragraph.1.4.2.2}
+\contentsline {subsection}{\numberline {1.5}Planification et architecture du projet}{10}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Capture des besoins}{10}{subsubsection.1.5.1}
+\contentsline {paragraph}{\numberline {1.5.1.1}Identification des acteurs}{10}{paragraph.1.5.1.1}
+\contentsline {subsubsection}{\numberline {1.5.2}Les besoins fonctionnels}{11}{subsubsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.3}Les besoins non fonctionnels}{12}{subsubsection.1.5.3}
+\contentsline {subsubsection}{\numberline {1.5.4}Backlog de produit}{13}{subsubsection.1.5.4}
