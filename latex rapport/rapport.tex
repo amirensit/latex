@@ -13,7 +13,7 @@
 \usepackage{titlesec}
 \usepackage{helvet}
 \usepackage{tabularx}
-
+\usepackage[page,toc,titletoc,title]{appendix}
 
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[normalem]{ulem}
@@ -147,11 +147,11 @@ Le secteur d'activité est :
 \begin{itemize}
 \item Assurance
 \end{itemize}
-\cleardoublepage
+
 \subsection{Description du contexte du projet}
 \subsubsection{Etude de système existant}
 L’étude de l’existant est une phase importante pour bien comprendre l'application web et dégager ces fonctionnalités et ces différents points faibles, ce site est consacré pour le groupe Générale Assistance. Il faut signaler que Générale Assistance joue un véritable rôle culturel en participant au développement des services d’assistance aux personnes par la conception de nouvelles prestations répondants aux besoins évolutifs des clients.\\
-Aussi,le groupe xploitee les nouvelles technologies d’information et de communication pour améliorer les procédures de gestion des sinistres automobile, habitation et santé en maîtrisant leurs coûts.. Le présent site web assure et simplifie les services précédemment cité d’une manière informatisé.
+Aussi,le groupe exploite les nouvelles technologies d’information et de communication pour améliorer les procédures de gestion des sinistres automobile, habitation et santé en maîtrisant leurs coûts.. Le présent site web assure et simplifie les services précédemment cité d’une manière informatisé.
 \subsubsection{Critique de l’existant}
 Vu le grand nombre de demande d'assurance et de collaborateur, le projet doit être un site de qualité (efficace, fiable, compatible, séduisant…) et permet de satisfaire les cibles pour lesquelles le site est conçu, mais dans notre cas, la Template utilisée par le site n’est pas ergonomique et parfois les informations ne sont pas bien lisibles ainsi que le chargement de quelque page prendre un temps cela à cause de l'emploi excessif d'images ou d'animations et l’absence d’un menu fixe qui permette d'atteindre les pages principales du site quel que soit la page chargée.
 \subsubsection{Problématique}
@@ -162,40 +162,15 @@ Dans un souci de migrer le site web de notre client vers une nouvelle version pl
 \item Migration de site web
 \item Développement des modules complémentaires
 \end{itemize}
-\cleardoublepage
+
 \subsection{Langage et Méthodologie de la conception}
 La méthodologie est une démarche organisée rationnellement pour aboutir à un résultat.
-Parmi les différentes méthodologies existantes, nous pouvons citer le modèle en cascade utilisé souvent dans les projets simples dont les besoins sont clairs et bien définis dès le début, le modèle en y utiliser pour le développement des applications mobiles, ainsi que le processus unifié et les méthodologies agiles (Scrum \& extrême programming) caractérisées par leurs souplesses et utilisées dans des grands projets.
+Parmi les différentes méthodologies existantes, nous pouvons citer le modèle en cascade utilisé souvent dans les projets simples dont les besoins sont clairs et bien définis dès le début, le modèle en y utilisé pour le développement des applications mobiles, ainsi que le processus unifié et les méthodologies agiles (Scrum \& extrême programming) caractérisées par leurs souplesses et utilisées dans des grands projets.
 Pour bien conduire notre projet et nous assurer du bon déroulement des différentes phases, nous avons opté Scrum comme une méthodologie de conception et de développement.\\
 Après le choix de la méthodologie, nous avons besoins, d’un langage de modélisation unifiée pour la modélisation de notre projet. Pour concevoir notre système, nous avons choisi UML\footnote{Unified Modeling Language}  comme un langage de modélisation.
 Notre choix s'est basé sur les points forts de ce langage notamment sa standardisation et les divers diagrammes qu’il propose. Aussi UML présente le meilleur outil pour schématiser des systèmes complexes sous un format graphique et textuel simplifié et normalisé.
-En effet, UML n'est ni un processus ni une démarche, d'où il fallait choisir une méthodologie de conception et de développement que nous devons l'adopter.
-\subsubsection{Pourquoi Scrum}
-\guillemotleft Scrum signifie mêlée au rugby. Scrum utilise les valeurs et l’esprit du rugby et les adapte aux projets de développement. Comme le pack lors d’un ballon porté au rugby, l’équipe chargée du développement travaille de façon collective, soudée vers un objectif précis. Comme un demi de mêlée, le Scrum Master aiguillonne les membres de l’équipe, les repositionne dans la bonne direction et donne le tempo pour assurer la réussite du projet. \guillemotright [1]\\
-Scrum est issu des travaux de deux des signataires du Manifeste Agile\footnote{Le manifeste agile est un texte rédigé et signé en 2001 par 17 experts dans le domaine de développement d’applications informatique.}, Ken Schwaber et Jeff Sutherland, au début des années 1990. Il appartient à la famille des méthodologies itératives et incrémentales et repose sur les principes et les valeurs agiles.\\
-Le plus souvent, les experts de Scrum, même ses fondateurs, le décrivent comme un cadre ou un patron de processus orienté gestion de projet et qui peut incorporer différentes méthodes ou pratiques d’ingénierie.
-\cleardoublepage
-S’il est difficile de définir la nature de Scrum, sa mise en place est beaucoup plus simple et peut être résumée par la Figure \ref{fig:pic2}. Le principe de base de Scrum est le suivant :
-\begin{itemize}
-\item[$\ast$] Dégager dans un premier lieu le maximum des fonctionnalités à réaliser pour former le backlog du produit,
-\item[$\ast$] En second lieu définir les priorités des fonctionnalités et choisir lesquelles seront réalisé dans chaque itération,
-\item[$\ast$]Par la suite focaliser l'équipe de façon itérative sur l’ensemble de fonctionnalités à réaliser, dans des itérations appelées Sprints,
-\item[$\ast$]Un Sprint aboutit toujours sur la livraison d’un produit partiel fonctionnel appelé incrément.
-\end{itemize}
-\begin{figure}[H]
-\centering
-\includegraphics[height=2.5in]{methode-scrum.jpg}
-\caption[Figure2 : Le processus Scrum]{Le processus Scrum[2]}
-\label{fig:pic2}
-\end{figure}
-Le choix de Scrum comme une méthodologie de pilotage pour notre projet s’est basé sur les atouts de ce dernier. Il se résume comme suit:
-\begin{itemize}
-\item Plus de souplesse et de réactivité,
-\item La grande capacité d’adaptation au changement grâce à des itérations courtes,
-\item La chose la plus importante, c’est que Scrum rassemble les deux cotés théorique et pratique et se rapproche beaucoup de la réalité.
+En effet, UML n'est ni un processus ni une démarche, d'où il fallait choisir une méthodologie de conception et de développement que nous devons l'adopter. Voir \hyperref[sec:hello]{Annexe}
 
-\end{itemize}
-\cleardoublepage
 \subsubsection{Pilotage du projet avec Scrum}
 \paragraph{Planification d’un projet par Scrum}
 \uline{Planification du sprint} : Elle s’appuie sur la planification de la « release » réalisée en pente. La première réunion du sprint ne se limite pas à planifier, on y trouve les activités suivantes :
@@ -212,16 +187,7 @@ Le choix de Scrum comme une méthodologie de pilotage pour notre projet s’est 
 \item Qu’est-ce que je ferai aujourd’hui ?
 \item Quels obstacles me retardent ?
 \end{enumerate}
-\paragraph{Equipe et rôles}
-\guillemotleft L’équipe a un rôle capital dans Scrum : elle est constituée dans le but d’optimiser la flexibilité et la productivité; pour cela, elle s’organise elle-même et doit avoir toutes les compétences nécessaires au développement du produit. Elle est investie avec le pouvoir et l’autorité pour faire ce qu’elle a à faire \guillemotright \footnote{C. Aubry, SCRUM le guide pratique de la méthode agile la plus populaire, Dunod, 2010.}\\
-Bref, Scrum définit trois rôles qui sont : 
-\cleardoublepage
-\textbf{Le Product Owner (le propriétaire du produit)} : c’est une personne qui porte la vision du produit à réaliser, généralement c’est un expert dans le domaine.\\
-
-\textbf{Le Scrum Master (le directeur de produit) } : c'est la personne qui doit assurer le bon déroulement des différents sprints du release, et qui doit impérativement maitriser Scrum. \\
-
-\textbf{Le Scrum Team (l’équipe de Scrum)} : constitué des personnes qui seront chargées d’implémenter les différents besoins du client. Bien évidemment, cette équipe sera constituée des développeurs, des testeurs, etc.\\
-Dans le contexte de notre projet, M. Aouadi Bessem sera le directeur de produit, et M. Toukebri Mohamed Arbi sera le propriétaire et moi Choubani Amir  je forme le membre de l’équipe Scrum.
+Voir \hyperref[sec:hello1]{Annexe} 
 \subsection{Planification et architecture du projet}
 \subsubsection{Capture des besoins}
 Nous procéderons par l’identification des acteurs puis la description des histoires utilisateurs du futur système
@@ -252,7 +218,8 @@ Dans ce qui suit, nous décrivons les besoins fonctionnels de notre projet appel
 	\begin{enumerate}
 	 \item [$\ast$] \uline{S’authentifier :}
 	 	\begin{enumerate}
-     		\item [\textendash]Se connecter à travers un login et un mot de passe en tant que super-admin.
+     		\item [\textendash]Se connecter à travers un login et un mot de passe en tant que super-admin.\\
+			\item [\textendash]Il y a contrôl de saisie de login et mot de passe,session expirée aprés une durée bien déterminée autre que bloquage de compte après trois tentatives erronées.
 		\end{enumerate}
 	\item [$\ast$] \uline{Changer ces informations personnelles :}
 		\begin{enumerate}
@@ -318,26 +285,211 @@ Les besoins non fonctionnels de notre système, appelés dans Scrum «Technical 
 \subsubsection{Backlog de produit}
 Le Backlog produit est utilisé pour planifier la release et aussi à chaque sprint, lors de la réunion de planification du sprint pour décider du sous-ensemble qui sera réalisé. Ses éléments sont classés par ordre de priorité ce qui permet de définir l’ordre de réalisation.
 Pour chaque user story on identifie le rang, l’estimation, l'importance et la description.\\
-\textbf{Rang} : Pour les user stories ayant la même priorité, un rang est assigné pour indiquer l'ordre dans lequel l'équipe doit les implémenter.\\
-\textbf{Estimation} : Sert à estimer l’effort nécessaire à une équipe pour implémenter une fonctionnalité. Elle prend en compte l’effort pour le développement.\\
-\textbf{Importance} : C’est un nombre qu'attribue le product owner à l'histoire : plus l'importance est grande, plus l'histoire devra être traitée en priorité.\\
-\textbf{Priorité} : Le product Owner classe les user story par ordre de priorité dans le Backlog produit en travaillant avec le client pour savoir ce qui est important pour lui.\\
-\textbf{Description} : Elle permet de décrire les user stories. Généralement, pour rendre ce nom explicite, une bonne façon de procéder est d'utiliser le Template suivant :  \guillemotleft En tant que X, je veuxY, afin de... \guillemotright. \\
-Le tableau décrit le product backlog de notre projet.
-ering
+Voir \hyperref[sec:hello2]{Annexe}.\\
+Le tableau suivant décrit le product backlog de notre projet.
 \begin{table}[H]
 \centering
 \label{tab:tab2} 
- \begin{tabularx}{\textwidth}{|X|X|X|}
+ \begin{tabularx}{\textwidth}{|X|X|X|X|}
 \hline
-\bfseries{ Id} &\bfseries{ Nom} &\bfseries{ Rôle} \\ \hline
-Le super-administrateur& Il s’agit de la personne qui possède toute les permissions sur le système. &Il est responsable de la gestion interne des profils.\\
+\bfseries{ Id} &\bfseries{ Nom} &\bfseries{ Description} &\bfseries{ Priorité} \\ \hline
+1& Développement de module administration &Le super admin peut bénéficier de fonctionnalités d'administration de l'application & 5\\
 \hline
-L'utilisateur normal & Il s'agit de la personne qui possède des permissions bien spécifiques & Il peut utiliser toutes les fonctionnalités de l'application sauf l'ajout d'un autre administrateur et la consultation de l'historique de connexion.\\
+2& Développement de module d'assistance &Préparer l'environnement de travail pour tous les utilisateurs de l'application & 8\\
+\hline 
+3&Intégration des modules d'administration et d'assistances &Fournir une application complète prête à utiliser & 13\\
 \hline
 \end{tabularx}
 \caption[tableau2 : Backlog de produit]{Backlog de produit}
 \end{table}
+\subsubsection{Planification de release}
+La réunion de planification des sprints est une étape importante dans SCRUM. Le planning de travail et l'identification du Backlog des sprints sont les buts de cette réunion. Durant ce meeting, la durée de chaque sprint est décidée selon la complexité du contexte et la taille de l'équipe.\\
+La planification de Sprint répond aux questions suivantes :
+\begin{enumerate}
+\item Qu’est-ce qui peut être terminé au cours de ce Sprint ?
+\item Comment sera effectué le travail choisi ?
+\end{enumerate}
+Et donc, une succession de Releases est le produit de cette réunion pour organiser le travail de l'équipe. Un Release est une série de Sprints qui se termine quand les incréments successifs constituent un produit présentant suffisamment de valeurs à ses utilisateurs. Dans notre cas, nous avons décidé de découper notre projet en trois Releases.
+\begin{figure}[H]
+\centering
+\includegraphics[height=2.8in]{Planification.jpg}
+\caption[Figure 2 : Planification de release]{Planification de release}
+\label{fig:pic2}
+\end{figure}
+\subsubsection{Identification de l’équipe scrum}
+\begin{table}[H]
+\centering
+\label{tab:tab3} 
+ \begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\bfseries{ Rôles Scrum} &\bfseries{ Personnes affectés} \\ \hline
+Product Owner& Toukebri Mohamed Arbi \\
+\hline
+Scrum Master& Aouadi Bacem \\
+\hline 
+Team&Choubani amir, Dahmeni Senda, Ardhaoui Aymen, Turki nessrine.\\
+ 
+\hline
+\end{tabularx}
+\caption[tableau3 : Identification de l'équipe scrum]{Identification de l'équipe scrum}
+\end{table}
+\subsubsection{Diagramme de cas d’utilisation initiale}
+Maintenant, nous allons présenter les différents besoins fonctionnels de notre système exprimés précédemment d'une manière informelle en utilisant le digramme de cas d'utilisation d'UML.\\
+La figure \ref{fig:pic3} illustre le diagramme de cas d'utilisation global de notre système.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=5.6in]{UseCaseDiagram1.jpg}
+\caption[Figure3 : Diagramme de cas d'utilisation]{Diagramme de cas d'utilisation}
+\label{fig:pic3}
+\end{figure}
+\cleardoublepage
+\subsubsection{Technologie et outils de développement}
+Dans cette partie, nous décrivons tous les outils matériels et logiciels de développement et de conception, avec lesquels on a réalisé ce projet. Nous allons commencer par une brève description des environnements Spring Boot et Angular, de l’architecture de notre application, et nous allons finir par les outils de développement utilisé pour réaliser ce projet.
+\paragraph{Présentation des environnements de travail}
+\begin{enumerate}
+\item [$\bullet$] \textbf{Spring Boot}
+\begin{figure}[H]
+\centering
+\includegraphics[height=1.5in]{springboot.png}
+\caption[Figure4 : Logo de Spring Boot ]{Logo de Spring Boot [5]}
+\label{fig:pic4}
+\end{figure}
+Spring Boot est un nouveau framework créé par l'équipe de chez Pivotal, conçu pour simplifier le démarrage et le développement de nouvelles applications Spring.\\
+Voir \hyperref[sec:hello3]{Annexe}
+\item [$\bullet$] \textbf{Angular}
+\begin{figure}[H]
+\centering
+\includegraphics[height=1.5in]{angular-2-logo.jpg}
+\caption[Figure5 : Logo de Angular  ]{Logo de Angular [6]}
+\label{fig:pic5}
+\end{figure}
+Angular est un framework Javascript pour créer des applications monopages,web et mobile.\\
+Il supporte plusieurs langage : ES5,ES6 et typescript.C'est une version qui suit AngularJS et qui a introduit un travail complètement différent en utilisant l'orienté objet (notion de composant).
+\item [$\bullet$] \textbf{PostgreSQL}
+Pour la gestion de base de donnée , on a utilisé PostgreSQL qui est similaire à MYSQL.
+\end{enumerate}
+\paragraph{Architecture utilisée}
+L’architecture en couches de notre système se base sur le patron (modèle) de conception MVC (Model View Controller).
+\begin{figure}[H]
+\centering
+\includegraphics[height=2.6in]{MVC.jpg}
+\caption[Figure7 : modèle MVC  ]{modèle MVC [7]}
+\label{fig:pic7}
+\end{figure}
+Modèle-Vue-Contrôleur est un motif d'architecture logicielle destiné pour les applications web. Le motif est composé de trois types de modules ayant trois responsabilités différentes : les modèles, les vues et les contrôleurs.\\
+Voir \hyperref[sec:hello4]{Annexe}
+\subsubsection{Environnement technique de travail}
+Le tableau détaille la configuration matérielle de machine de développement et de déploiement utilisée ainsi que les différents logiciels qui y sont installés :
+
+\begin{table}[H]
+\centering
+\label{tab:tab4} 
+ \begin{tabularx}{\textwidth}{|X|X|}
+\hline
+ Machines & Asus \\ \hline
+Propriétaire& Général Assistance Connecté \\
+\hline
+Processeur & I7\\
+\hline
+RAM & 8 GO \\
+\hline
+Système d’exploitation & UBUNTO 16.04 \\
+\hline
+\end{tabularx}
+\caption[tableau4 : Environnement matérielle]{Environnement matérielle}
+\end{table}
+\paragraph{Outil de conception}
+Visual Paradigm for Unified Modeling Language (VP-UML) est un outil UML. L'outil est conçu pour un large éventail d'utilisateurs, y compris les ingénieurs logiciels, analystes système, analystes et architectes système, ou pour quiconque est intéressé par la construction de manière fiable des systèmes de logiciels à grande échelle en utilisant une approche orientée objet.
+\paragraph{Outils de développement}
+Dans cette partie nous allons décrire les outils de développement utilisé pour réaliser ce projet.
+
+\begin{center}
+\includegraphics[height=0.2in]{npm.png}\\
+\includegraphics[height=0.2in]{gitLab.png}\\
+\includegraphics[height=0.4in]{VSCode.png}\\
+\includegraphics[height=0.4in]{pgAdmin.jpg}\\
+\vspace{0.5cm}
+\includegraphics[height=0.4in]{eclipse.jpg}
+\end{center}
+\cleardoublepage
+
+\paragraph{Langages de programmation}
+\begin{enumerate}
+\item [$\bullet$] \textbf{ Java Entreprise Edition}
+\item[$\bullet$] \textbf{ TypeScript}
+\item[$\bullet$] \textbf{ Bootstrap 4}
+\item[$\bullet$] \textbf{ HTML 5}
+\item [$\bullet$] \textbf{ CSS 3} 
+\item[$\bullet$] \textbf{ SCSS}
+\end{enumerate}
+voir annexe.
+\subsection{Conclusion}
+Dans ce chapitre nous avons présenté le cadre général de notre projet en déterminant la problématique et en proposant la solution envisagée pour faire face à la situation courante. Nous avons dévoilé le langage et la méthodologie de conception qui seront utilisés dans les prochains chapitres de ce rapport. Nous avons présenté le Sprint 0 qui, est en fait une phase de préparation pendant laquelle on a construit notre backlog du produit en se basant sur les besoins fonctionnels et non fonctionnels.\\ En plus, nous avons découpé notre projet en des releases qui formeront les chapitres suivants. Et finalement, nous avons défini les technologies et les environnements de développement ainsi que l’architecture globale de l’application.
+Dans le chapitre suivant nous abordons le release 1 dans laquelle nous allons décrire les sprints à réaliser.
+\cleardoublepage
+\begin{titlepage}\centering
+\vspace*{\fill}
+\textbf{\LARGE ANNEXE }
+\vspace*{\fill}
+\end{titlepage}
+\setcounter{page}{41}
+\appendix
+\subsubsection*{Pourquoi Scrum :}
+\vspace{0.5cm}
+\vspace{0.3cm}
+
+\guillemotleft Scrum signifie mêlée au rugby. Scrum utilise les valeurs et l’esprit du rugby et les adapte aux projets de développement. Comme le pack lors d’un ballon porté au rugby, l’équipe chargée du développement travaille de façon collective, soudée vers un objectif précis. Comme un demi de mêlée, le Scrum Master aiguillonne les membres de l’équipe, les repositionne dans la bonne direction et donne le tempo pour assurer la réussite du projet. \guillemotright [1]\\\label{sec:hello}
+Scrum est issu des travaux de deux des signataires du Manifeste Agile\footnote{Le manifeste agile est un texte rédigé et signé en 2001 par 17 experts dans le domaine de développement d’applications informatique.}, Ken Schwaber et Jeff Sutherland, au début des années 1990. Il appartient à la famille des méthodologies itératives et incrémentales et repose sur les principes et les valeurs agiles.\\
+Le plus souvent, les experts de Scrum, même ses fondateurs, le décrivent comme un cadre ou un patron de processus orienté gestion de projet et qui peut incorporer différentes méthodes ou pratiques d’ingénierie.
+
+S’il est difficile de définir la nature de Scrum, sa mise en place est beaucoup plus simple et peut être résumée par la Figure \ref{fig:pic8}. Le principe de base de Scrum est le suivant :
+\begin{itemize}
+\item[$\ast$] Dégager dans un premier lieu le maximum des fonctionnalités à réaliser pour former le backlog du produit,
+\item[$\ast$] En second lieu définir les priorités des fonctionnalités et choisir lesquelles seront réalisé dans chaque itération,
+\item[$\ast$]Par la suite focaliser l'équipe de façon itérative sur l’ensemble de fonctionnalités à réaliser, dans des itérations appelées Sprints,
+\item[$\ast$]Un Sprint aboutit toujours sur la livraison d’un produit partiel fonctionnel appelé incrément.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[height=2.5in]{methode-scrum.jpg}
+\caption[Figure8 : Le processus Scrum]{Le processus Scrum[2]}
+\label{fig:pic8}
+\end{figure}
+Le choix de Scrum comme une méthodologie de pilotage pour notre projet s’est basé sur les atouts de ce dernier. Il se résume comme suit:
+\begin{itemize}
+\item Plus de souplesse et de réactivité,
+\item La grande capacité d’adaptation au changement grâce à des itérations courtes,
+\item La chose la plus importante, c’est que Scrum rassemble les deux cotés théorique et pratique et se rapproche beaucoup de la réalité.
+\end{itemize}
+\subsection*{Equipe et rôles (Scrum) : }
+\guillemotleft L’équipe a un rôle capital dans Scrum : elle est constituée dans le but d’optimiser la flexibilité et la productivité; pour cela, elle s’organise elle-même et doit avoir toutes les compétences nécessaires au développement du produit. Elle est investie avec le pouvoir et l’autorité pour faire ce qu’elle a à faire \guillemotright \footnote{C. Aubry, SCRUM le guide pratique de la méthode agile la plus populaire, Dunod, 2010.}\\
+Bref, Scrum définit trois rôles qui sont : 
+
+\textbf{Le Product Owner (le propriétaire du produit)} : c’est une personne qui porte la vision du produit à réaliser, généralement c’est un expert dans le domaine.\\
+\label{sec:hello1}
+\textbf{Le Scrum Master (le directeur de produit) } : c'est la personne qui doit assurer le bon déroulement des différents sprints du release, et qui doit impérativement maitriser Scrum. \\
+
+\textbf{Le Scrum Team (l’équipe de Scrum)} : constitué des personnes qui seront chargées d’implémenter les différents besoins du client. Bien évidemment, cette équipe sera constituée des développeurs, des testeurs, etc.\\
+Dans le contexte de notre projet, M. Aouadi Bessem sera le directeur de produit, et M. Toukebri Mohamed Arbi sera le propriétaire et moi Choubani Amir  je forme le membre de l’équipe Scrum.
+\subsection*{Backlog de produit : }
+\textbf{Rang} : Pour les user stories ayant la même priorité, un rang est assigné pour indiquer l'ordre dans lequel l'équipe doit les implémenter.\\
+\textbf{Estimation} : Sert à estimer l’effort nécessaire à une équipe pour implémenter une fonctionnalité. Elle prend en compte l’effort pour le développement.\\
+\textbf{Importance} : C’est un nombre qu'attribue le product owner à l'histoire : plus l'importance est grande, plus l'histoire devra être traitée en priorité.\\
+\textbf{Priorité} : Le product Owner classe les user story par ordre de priorité dans le Backlog produit en travaillant avec le client pour savoir ce qui est important pour lui.\\
+On utilise la suite de fibonacci pour attribuer les priorités.\\ 
+\textbf{Description} : Elle permet de décrire les user stories. Généralement, pour rendre ce nom explicite, une bonne façon de procéder est d'utiliser le Template suivant :  \guillemotleft En tant que X, je veuxY, afin de... \guillemotright. \\
+\label{sec:hello2}
+\subsection*{Spring Boot : }
+ Le framework propose une approche dogmatique de la configuration, qui permet d'éviter aux développeurs de redéfinir la même configuration à plusieurs endroits du code. Dans ce sens, Boot se veut d'être un acteur majeur dans le secteur croissant du développement d'applications rapide.\\
+Spring Boot facilite la création d'applications et de services de production, avec un minimum d'encombrement absolu. Il prend une vue d'opinion de la plate-forme Spring afin que les utilisateurs nouveaux et existants puissent rapidement accéder aux bits dont ils ont besoin.
+\label{sec:hello3}
+\subsection*{Architecture MVC : }
+La partie Modèle d’une architecture MVC encapsule la logique métier ainsi que l’accès aux données. Il peut s’agir d’un ensemble de fonctions ou de classes.Ceci est géré par Spring Boot.\\
+La partie Contrôleur gère la dynamique de l’application. La partie Vue s’occupe des interactions avec l’utilisateur : présentation, saisie et validation des données.Ceci est géré par Angular.
+ Elle fait le lien entre l’utilisateur et le reste de l’application.
+La demande de l’utilisateur est reçue et interprétée par le Contrôleur. Celui-ci utilise les services du Modèle afin de préparer les données à afficher. Ensuite, le Contrôleur fournit ces données à la Vue, qui les présente à l’utilisateur sous la forme d’une page HTML.
+\label{sec:hello4}
 \cleardoublepage
 \bibliographystyle{unsrt}
 \begin{thebibliography}{1}
@@ -345,6 +497,10 @@ L'utilisateur normal & Il s'agit de la personne qui possède des permissions bie
 \bibitem{2} \textcolor{blue}{\url{ http://ineumann.developpez.com/tutoriels/alm/agile_scrum/ }} consulté le 12/08/17
 \bibitem{3} \textcolor{blue}{\url{http://www.redcad.org/members/tarak.chaari/cours/coursUML.pdf }} consulté le 13/08/17
 \bibitem{4} \textcolor{blue}{\url{http://www.redcad.org/members/tarak.chaari/cours/coursUML.pdf }} consulté le 13/08/17
+\bibitem{5} \textcolor{blue}{\url{https://blog.netapsys.fr/wp-content/uploads/2017/03/ }} consulté le 13/08/17
+\bibitem{6} \textcolor{blue}{\url{http://blog.oxiane.com/wp-content/uploads/2016/02/ }} consulté le 13/08/17
+\bibitem{7} \textcolor{blue}{\url{http://blog.viseo-bt.com/wp-content/uploads/2012/03/}} consulté le 13/08/17
+\bibitem{8} \textcolor{blue}{\url{http://telecharger.cnet.com/Visual-Paradigm-for-UML/}} consulté le 13/08/17
 \end{thebibliography}
 
 \end{document}
