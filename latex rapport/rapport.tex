@@ -428,6 +428,42 @@ voir annexe.
 Dans ce chapitre nous avons présenté le cadre général de notre projet en déterminant la problématique et en proposant la solution envisagée pour faire face à la situation courante. Nous avons dévoilé le langage et la méthodologie de conception qui seront utilisés dans les prochains chapitres de ce rapport. Nous avons présenté le Sprint 0 qui, est en fait une phase de préparation pendant laquelle on a construit notre backlog du produit en se basant sur les besoins fonctionnels et non fonctionnels.\\ En plus, nous avons découpé notre projet en des releases qui formeront les chapitres suivants. Et finalement, nous avons défini les technologies et les environnements de développement ainsi que l’architecture globale de l’application.
 Dans le chapitre suivant nous abordons le release 1 dans laquelle nous allons décrire les sprints à réaliser.
 \cleardoublepage
+\setcounter{section}{2}
+
+\section*{Chapitre 2 :  Release 1 " Développement des modules "}
+\addcontentsline{toc}{section}{\numberline{} Chapitre 2 " Développement des modules "}
+\setcounter{subsection}{0}
+\subsection{Introduction}
+Après avoir entamé le release 0 de projet , nous
+pouvons maintenant passer au premier release \guillemotleft Gestion administrative \guillemotright . En effet, ce
+release constitue un objectif principal de notre projet puisqu'il permet de gérer l'accés à
+l'application .
+\subsubsection{Sprint 1 : Module d'administration}
+Au niveau de ce sprint, nous commençons par présenter le diagramme des classes nécéssaires à l'implémentation. Ensuite, on présentera
+la conception avec les diagrammes de cas d'utilisation et de  séquences. On finira par la réalisation avec des interfaces développées .
+\begin{enumerate}
+\item[$\bullet$] \textbf{ Diagramme des classes}
+\begin{figure}[H]
+\centering
+\includegraphics[height=3in]{DiagClass1.jpg}
+\caption[Figure9 : Diagramme de classe de module administration]{Diagramme de classe de module administration}
+\label{fig:pic9}
+\end{figure}
+\item[$\bullet$] \textbf{ Diagramme de cas d'utilisation}\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=3in]{UseCaseDiagram2.png}
+\caption[Figure10 : Diagramme de cas d'utilisation " gérer utilisateur "]{Diagramme de cas d'utilisation " gérer utilisateur "}
+\label{fig:pic10}
+\end{figure}
+Le diagramme de cas d'utilisation présenté par la figure \ref{fig:pic10} décrit la gestion des
+utilisateurs du système par l'administrateur. Ce diagramme nous montre que l'administrateur ne peut faire sa gestion qu'après identification.Ainsi que la modification ou la
+suppression d'un utilisateur ne peut être effectuer qu'après consultation des utilisateurs
+ou recherche de ce dernier .
+\end{enumerate}
+\paragraph{Description textuelle du cas d'utilisation "ajouter un utilisateur"}
+
 \begin{titlepage}\centering
 \vspace*{\fill}
 \textbf{\LARGE ANNEXE }

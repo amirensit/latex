@@ -29,3 +29,7 @@
 \contentsline {paragraph}{\numberline {1.5.9.2}Outils de d\IeC {\'e}veloppement}{15}{paragraph.1.5.9.2}
 \contentsline {paragraph}{\numberline {1.5.9.3}Langages de programmation}{16}{paragraph.1.5.9.3}
 \contentsline {subsection}{\numberline {1.6}Conclusion}{16}{subsection.1.6}
+\contentsline {section}{\hbox to\@tempdima {\hfil } Chapitre 2 " D\IeC {\'e}veloppement des modules "}{17}{subsection.1.6}
+\contentsline {subsection}{\numberline {2.1}Introduction}{17}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Sprint 1 : Module d'administration}{17}{subsubsection.2.1.1}
+\contentsline {paragraph}{\numberline {2.1.1.1}Description textuelle du cas d'utilisation "ajouter un utilisateur"}{18}{paragraph.2.1.1.1}
