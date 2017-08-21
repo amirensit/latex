@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=1in,includefoot]{geometry}
+\usepackage[headheight=12.95494pt,,margin=1in,includefoot]{geometry}
 \usepackage{lipsum}
 \usepackage{fancyhdr}
 \usepackage{setspace}
@@ -431,16 +431,16 @@ Dans le chapitre suivant nous abordons le release 1 dans laquelle nous allons d�
 \setcounter{section}{2}
 
 \section*{Chapitre 2 :  Release 1 " Développement des modules "}
-\addcontentsline{toc}{section}{\numberline{} Chapitre 2 " Développement des modules "}
+\addcontentsline{toc}{section}{\numberline{} Chapitre 2 : Release 1 " Développement des modules "}
 \setcounter{subsection}{0}
 \subsection{Introduction}
 Après avoir entamé le release 0 de projet , nous
-pouvons maintenant passer au premier release \guillemotleft Gestion administrative \guillemotright . En effet, ce
+pouvons maintenant passer au premier release \guillemotleft Gestion d'administration et d'assistance \guillemotright . En effet, ce
 release constitue un objectif principal de notre projet puisqu'il permet de gérer l'accés à
-l'application .
-\subsubsection{Sprint 1 : Module d'administration}
+l'application et contient les tâches principales .
+\subsection{Sprint 1 : Module d'administration}
 Au niveau de ce sprint, nous commençons par présenter le diagramme des classes nécéssaires à l'implémentation. Ensuite, on présentera
-la conception avec les diagrammes de cas d'utilisation et de  séquences. On finira par la réalisation avec des interfaces développées .
+la conception avec les diagrammes de cas d'utilisation et de  séquences. 
 \begin{enumerate}
 \item[$\bullet$] \textbf{ Diagramme des classes}
 \begin{figure}[H]
@@ -453,7 +453,7 @@ la conception avec les diagrammes de cas d'utilisation et de  séquences. On fin
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=3in]{UseCaseDiagram2.png}
+\includegraphics[height=3.7in]{UseCaseDiagram2.png}
 \caption[Figure10 : Diagramme de cas d'utilisation " gérer utilisateur "]{Diagramme de cas d'utilisation " gérer utilisateur "}
 \label{fig:pic10}
 \end{figure}
@@ -462,8 +462,148 @@ utilisateurs du système par l'administrateur. Ce diagramme nous montre que l'ad
 suppression d'un utilisateur ne peut être effectuer qu'après consultation des utilisateurs
 ou recherche de ce dernier .
 \end{enumerate}
-\paragraph{Description textuelle du cas d'utilisation "ajouter un utilisateur"}
+\subsubsection{Description textuelle du cas d'utilisation "ajouter un utilisateur"}
 
+Nous allons réaliser une description textuelle du scénario de ajout d'un utilisateur
+pour mieux connaître les étapes à suivre pour que l'administrateur réussit cette ajout.\\
+Cette description est présentée par le tableau \ref{tab:tab5}.
+\begin{table}[H]
+\centering
+ \begin{tabularx}{\textwidth}{|X|X|}
+\hline
+ \textbf{Titre} & \textbf{Ajouter un utilisateur} \\ \hline
+\textbf{Résumé} & Ajouter un utilisateur de l'application à la base de données \\
+\hline
+\textbf{Acteurs} & Super Administrateur\\
+\hline
+\textbf{Précondition} & S'identifier \\
+\hline
+\textbf{Postcondition} & Un nouvel utilisateur est sauvegardé \\
+\hline
+\textbf{Scénario nominal} & \begin{enumerate}
+\item l'administrateur saisi les données du nouvel utilisateur
+\item l'administrateur appui sur le bouton sauvegarder pour
+valider l'ajout
+\item l'application affiche un message de succès.
+\end{enumerate} \\
+\hline
+\textbf{Scénario alternatif} & \begin{enumerate}
+\item L'administrateur effectue une erreur de saisi(formulaire non entièrement rempli . . .)
+\item L'application affche un message d'erreur
+\item le scénario nominal reprend au point 1.
+\end{enumerate} \\
+\hline
+\end{tabularx}
+\caption[tableau 5 : Tableau descriptif du cas d'utilisation "ajouter un utilisateur"]{Tableau descriptif du cas d'utilisation "ajouter un utilisateur"}
+\label{tab:tab5}
+\end{table}
+\subsubsection{Description textuelle du cas d'utilisation "chercher un utilisateur"}
+Nous allons réaliser un tableau descriptif \ref{tab:tab6} du scénario de la recherche d'un utilisateur
+pour mieux connaître les étapes à suivre pour que l'administrateur réussit cette
+tâche.
+\begin{table}[H]
+\centering
+ \begin{tabularx}{\textwidth}{|X||X|}
+\hline
+ \textbf{Titre} & \textbf{Chercher un utilisateur} \\ \hline
+\textbf{Résumé} & Chercher un utilisateur \\
+\hline
+\textbf{Acteurs} &Super Administrateur\\
+\hline
+\textbf{Précondition} & S'identifier \\
+\hline
+\textbf{Postcondition} & La liste des utilisateurs est affichée. \\
+\hline
+\textbf{Scénario nominal} & \begin{enumerate}
+\item l'administrateur saisi le nom et prénom de l'utilisateur
+\item l'application affiche une liste des utilisateurs qui porte
+le même nom
+\end{enumerate} \\
+\hline
+\textbf{Scénario alternatif} & \begin{enumerate}
+\item L'administrateur saisi des données erronées
+\item le scénario nominal reprend au point 1.
+\end{enumerate} \\
+\hline
+\end{tabularx}
+\caption[tableau 6 : Tableau descriptif du cas d'utilisation "chercher un utilisateur"]{Tableau descriptif du cas d'utilisation "chercher un utilisateur"}
+\label{tab:tab6}
+\end{table}
+\subsubsection{Description textuelle du cas d'utilisation "consulter liste des utilisateurs"}
+Nous allons réaliser une description textuelle du scénario de la consultation de la
+liste des utilisateurs pour mieux connaître les étapes à suivre pour que l'administrateur
+réussit cette consultation.
+Cette description est présentée par le tableau \ref{tab:tab7}
+\begin{table}[H]
+\centering
+ \begin{tabularx}{\textwidth}{|X||X|}
+\hline
+ \textbf{Titre} & \textbf{Consulter la liste des utilisateurs} \\ \hline
+\textbf{Résumé} & Consulter la liste des utilisateurs \\
+\hline
+\textbf{Acteurs} &Super Administrateur\\
+\hline
+\textbf{Précondition} & S'identifier \\
+\hline
+\textbf{Postcondition} & La liste des utilisateurs est affichée. \\
+\hline
+\textbf{Scénario nominal} & \begin{enumerate}
+\item l'administrateur appui sur la page de navigation
+voulu \guillemotleft liste les utilisateurs \guillemotright
+\item l'administrateur consulte la liste des utilisateurs.
+\end{enumerate} \\
+\hline
+\textbf{Scénario alternatif} & \begin{enumerate}
+\item L'administrateur sélectionne la page de
+navigation non voulu
+\item le scénario nominal reprend au point 1.
+\end{enumerate} \\
+\hline
+\end{tabularx}
+\caption[tableau 7 : Tableau descriptif du cas d'utilisation "consulter liste des utilisateurs"]{Tableau descriptif du cas d'utilisation "consulter liste des utilisateurs"}
+\label{tab:tab7}
+\end{table}
+\subsubsection{Conception}
+Après la spécification des différentes fonctionnalités du backlog de ce sprint, nous
+passons à la phase de conception pour mieux expliquer ses fonctionnalités à l'aide des
+diagrammes de séquence.
+\subsubsection{Diagramme de séquence "Ajouter un utilisateur"}
+\begin{figure}[H]
+\centering
+\includegraphics[height=4.7in]{DiagSeqAjouterUtilisateur.jpg}
+\caption[Figure11 : Diagramme de séquence " gérer utilisateur "]{Diagramme de séquence " gérer utilisateur "}
+\label{fig:pic11}
+\end{figure}
+\subsubsection{Diagramme de séquence "consulter la liste des utilisateurs"}
+\begin{figure}[H]
+\centering
+\includegraphics[height=4.7in]{DiagSeq2.jpg}
+\caption[Figure12 : Diagramme de séquence " gérer liste des utilisateurs "]{Diagramme de séquence " gérer liste des utilisateurs "}
+\label{fig:pic12}
+\end{figure}
+
+\subsection{Sprint 2 : Module d'assistance}
+Au niveau du deuxième sprint de release, nous commençons par présenter le diagramme des classes nécéssaires à l'implémentation. Ensuite, on présentera
+la conception avec les diagrammes de cas d'utilisation et de  séquences. 
+\begin{enumerate}
+\item[$\bullet$] \textbf{ Diagramme des classes}
+\begin{figure}[H]
+\centering
+\includegraphics[height=4.8in]{DiagClasseModuleAssistance.PNG}
+\caption[Figure13 : Diagramme de classe de module assistance]{Diagramme de classe de module assistance}
+\label{fig:pic13}
+\end{figure}
+On va prendre l'exemple de gestion des remoqueurs.
+\begin{figure}[H]
+\centering
+\includegraphics[height=4.8in]{UseCaseDiagram2.jpg}
+\caption[Figure14 : Diagramme de cas d'utilisation " gérer remorqueurs "]{Diagramme de cas d'utilisation " gérer remorqueurs "}
+\label{fig:pic14}
+\end{figure}
+Le diagramme de cas d'utilisation présenté par la figure \ref{fig:pic14} décrit la gestion des
+remorqueurs par l'administrateur. Ce diagramme nous montre que l'administrateur ne peut faire sa gestion qu'après identification.Ainsi que la modification ou la
+suppression d'un remorqueur ne peut être effectuer qu'après consultation de liste des remorqueurs.
+\end{enumerate}
 \begin{titlepage}\centering
 \vspace*{\fill}
 \textbf{\LARGE ANNEXE }
