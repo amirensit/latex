@@ -39,3 +39,10 @@
 \contentsline {subsubsection}{\numberline {2.2.5}Diagramme de s\IeC {\'e}quence "Ajouter un utilisateur"}{22}{subsubsection.2.2.5}
 \contentsline {subsubsection}{\numberline {2.2.6}Diagramme de s\IeC {\'e}quence "consulter la liste des utilisateurs"}{23}{subsubsection.2.2.6}
 \contentsline {subsection}{\numberline {2.3}Sprint 2 : Module d'assistance}{23}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Description textuelle du cas d'utilisation "ajouter un remorqueur"}{25}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Diagramme de s\IeC {\'e}quence "ajouter un remorqueur"}{27}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}Conclusion}{28}{subsection.2.4}
+\contentsline {section}{\hbox to\@tempdima {\hfil } Chapitre 3 : Release 2 " D\IeC {\'e}ploiment de l'application et r\IeC {\'e}alisation "}{29}{subsection.2.4}
+\contentsline {subsection}{\numberline {3.1}Introduction}{29}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Sprint 1 : Int\IeC {\'e}gration des modules }{29}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Sprint 2 : R\IeC {\'e}alisation }{29}{subsection.3.3}

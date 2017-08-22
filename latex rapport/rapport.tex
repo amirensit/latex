@@ -601,9 +601,76 @@ On va prendre l'exemple de gestion des remoqueurs.
 \label{fig:pic14}
 \end{figure}
 Le diagramme de cas d'utilisation présenté par la figure \ref{fig:pic14} décrit la gestion des
-remorqueurs par l'administrateur. Ce diagramme nous montre que l'administrateur ne peut faire sa gestion qu'après identification.Ainsi que la modification ou la
-suppression d'un remorqueur ne peut être effectuer qu'après consultation de liste des remorqueurs.
+remorqueurs par l'administrateur. Ce diagramme nous montre que l'administrateur ne peut faire sa gestion qu'après identification.Ainsi que la modification ou la suppression d'un remorqueur ne peut être effectuer qu'après consultation de liste des remorqueurs.
 \end{enumerate}
+\subsubsection{Description textuelle du cas d'utilisation "ajouter un remorqueur"}
+
+Nous allons réaliser une description textuelle du scénario d'ajout d'un remorqueur
+pour mieux connaître les étapes à suivre pour que l'administrateur réussit cette ajout.\\
+Cette description est présentée par le tableau \ref{tab:tab8}
+\begin{table}[H]
+\centering
+ \begin{tabularx}{\textwidth}{|X||X|}
+\hline
+ \textbf{Titre} & \textbf{ajouter un nouveau remorqueur} \\ \hline
+\textbf{Résumé} & ajouter un nouveau remorqueur à la base de donnée \\
+\hline
+\textbf{Acteurs} &Super Administrateur et administrateur\\
+\hline
+\textbf{Précondition} & S'identifier \\
+\hline
+\textbf{Postcondition} & Un nouveau remorqueur est enregistré. \\
+\hline
+\textbf{Scénario nominal} & \begin{enumerate}
+\item L'utilisateur saisie les données du nouveau remorqueur.
+\item L'utilisateur appuie sur le bouton \guillemotleft sauvegarder \guillemotright pour valider l'ajout.
+\item L'application affiche un message de succès.
+\end{enumerate} \\
+\hline
+\textbf{Scénario alternatif} & \begin{enumerate}
+\item L'utilisateur effectue une erreur de saisie.
+\item L'application affiche un message d'erreur.
+\item Le scénario nominal reprend au point 1.
+\end{enumerate} \\
+\hline
+\end{tabularx}
+\caption[tableau 8 : Tableau descriptif du cas d'utilisation "ajouter un remorqueur"]{Tableau descriptif du cas d'utilisation "ajouter un remorqueur"}
+\label{tab:tab8}
+\end{table}
+\subsubsection{Diagramme de séquence "ajouter un remorqueur"}
+\begin{figure}[H]
+\centering
+\includegraphics[height=5.4in]{DiagSeqAjouterRemorqueur.jpg}
+\caption[Figure15 : Diagramme de séquence " gérer remorqueurs "]{Diagramme de séquence " gérer remorqueurs "}
+\label{fig:pic15}
+\end{figure}
+\textbf{NB : } De même pour les autres classes.
+\cleardoublepage
+\subsection{Conclusion} 
+A ce stade, nous avons réussi à développer les différentes tâches des modules d'administration et d'assistance. Dans le chapitre qui suit, notre effort sera consacré pour l'intégration des modules dans une seule application, le déploiment sur un serveur physique ainsi que la présention de quelques écrans pour la démonstration de
+notre système.
+\cleardoublepage
+\setcounter{section}{3}
+\setcounter{subsection}{0}
+\section*{Chapitre 3 :  Release 2 " Déploiment de l'application et réalisation "}
+\addcontentsline{toc}{section}{\numberline{} Chapitre 3 : Release 2 " Déploiment de l'application et réalisation "}
+\subsection{Introduction}
+Après avoir entamé le release de la gestion administration et gestion d'assistance,
+nous pouvons maintenant passer au deuxième release \guillemotleft Déploiment et réalisation \guillemotright.
+En effet, ce release constitue la dernière tâche  de notre projet puisqu'elle permet de mettre l'application en mode production et la societé peut ainsi profiter de ses fonctionnalités.
+\subsection{Sprint 1 : Intégration des modules }
+L'application se constitue par deux modules : \\
+\begin{enumerate}
+\item[$\bullet$] \textbf{ Administration}
+\item[$\bullet$] \textbf{ Assistance }
+\end{enumerate}
+Le premier module consiste à gérer l'accès à l'application et gestion des rôles et d'utilisateur.
+Il s'agit de deux rôles : Super administrateur et administrateur.\\
+Le deuxième module contient pratiquement les fonctionnalités de l'application : gestion des contact, gestion des packs , gestion de dossier d'assuré et gestion des remorqueurs.\\
+Les deux modules sont développés séparément sur des machines différentes et par des personnes différents. Dans ce sprint, l'objectif était d'assurer une bonne intégration sans conflit pour aboutir à une application fonctionnelle.
+On a utlisé GIT, qui est un logiciel de gestion de versions.\\
+On a aussi utilisé REDMINE qui est une application web libre de gestion de projets complète en mode web. 
+\subsection{Sprint 2 : Réalisation }
 \begin{titlepage}\centering
 \vspace*{\fill}
 \textbf{\LARGE ANNEXE }
