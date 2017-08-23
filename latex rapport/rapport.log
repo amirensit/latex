@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.25)  22 AUG 2017 06:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.25)  23 AUG 2017 14:38
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -610,7 +610,26 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \ULC@box=\box31
 Package: ulem 2012/05/18
 \ULdepth=\dimen131
-) (rapport.aux)
+) (rapport.aux
+
+LaTeX Warning: Label `fig:pic9' multiply defined.
+
+
+LaTeX Warning: Label `fig:pic10' multiply defined.
+
+
+LaTeX Warning: Label `fig:pic11' multiply defined.
+
+
+LaTeX Warning: Label `fig:pic12' multiply defined.
+
+
+LaTeX Warning: Label `fig:pic13' multiply defined.
+
+
+LaTeX Warning: Label `fig:pic8' multiply defined.
+
+)
 \openout1 = `rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -756,7 +775,7 @@ LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
  [1
 
-] [2] <gacLogo.png, id=283, 200.75pt x 200.75pt>
+] [2] <gacLogo.png, id=300, 200.75pt x 200.75pt>
 File: gacLogo.png Graphic file (type png)
  <use gacLogo.png>
 Package pdftex.def Info: gacLogo.png used on input line 133.
@@ -816,7 +835,7 @@ Underfull \hbox (badness 6608) in paragraph at lines 302--302
 []|\T1/phv/m/n/10 Intégration des mod-
  []
 
-[9] <Planification.jpg, id=326, 688.5725pt x 347.2975pt>
+[9] <Planification.jpg, id=343, 688.5725pt x 347.2975pt>
 File: Planification.jpg Graphic file (type jpg)
 
 <use Planification.jpg>
@@ -829,7 +848,7 @@ Package pdftex.def Info: Planification.jpg used on input line 315.
                                                   \fi \fi 
 l.319 ...tion{Identification de lâ€™Ã©quipe scrum}
                                                   ]
-<UseCaseDiagram1.jpg, id=334, 1128.215pt x 786.94pt>
+<UseCaseDiagram1.jpg, id=351, 1128.215pt x 786.94pt>
 File: UseCaseDiagram1.jpg Graphic file (type jpg)
  <use UseCaseDiagram1.jpg>
 Package pdftex.def Info: UseCaseDiagram1.jpg used on input line 342.
@@ -859,13 +878,13 @@ tion with the same identifier (name{figure.3}) has been already used, duplicate
                                                   \fi \fi 
 l.346 \cleardoublepage
                        <./UseCaseDiagram1.jpg>]
-<springboot.png, id=343, 245.91875pt x 77.28876pt>
+<springboot.png, id=360, 245.91875pt x 77.28876pt>
 File: springboot.png Graphic file (type png)
  <use springboot.png>
 Package pdftex.def Info: springboot.png used on input line 354.
 (pdftex.def)             Requested size: 344.95557pt x 108.405pt.
 
-<angular-2-logo.jpg, id=346, 730.73pt x 401.5pt>
+<angular-2-logo.jpg, id=363, 730.73pt x 401.5pt>
 File: angular-2-logo.jpg Graphic file (type jpg)
  <use angular-2-logo.jpg>
 Package pdftex.def Info: angular-2-logo.jpg used on input line 363.
@@ -874,7 +893,7 @@ Package pdftex.def Info: angular-2-logo.jpg used on input line 363.
 [13
 
  <./springboot.png> <./angular-2-logo.jpg>]
-<MVC.jpg, id=356, 523.20468pt x 189.70876pt>
+<MVC.jpg, id=373, 523.20468pt x 189.70876pt>
 File: MVC.jpg Graphic file (type jpg)
  <use MVC.jpg>
 Package pdftex.def Info: MVC.jpg used on input line 376.
@@ -891,31 +910,31 @@ Overfull \hbox (48.47469pt too wide) in paragraph at lines 376--377
                                                   \fi \fi 
 l.402 \paragraph{Outil de conception}
                                       <./MVC.jpg>]
-<npm.png, id=363, 361.35pt x 140.525pt>
+<npm.png, id=380, 361.35pt x 140.525pt>
 File: npm.png Graphic file (type png)
  <use npm.png>
 Package pdftex.def Info: npm.png used on input line 408.
 (pdftex.def)             Requested size: 37.16267pt x 14.45377pt.
 
-<gitLab.png, id=364, 378.41376pt x 134.5025pt>
+<gitLab.png, id=381, 378.41376pt x 134.5025pt>
 File: gitLab.png Graphic file (type png)
  <use gitLab.png>
 Package pdftex.def Info: gitLab.png used on input line 409.
 (pdftex.def)             Requested size: 40.66136pt x 14.45377pt.
 
-<VSCode.png, id=365, 401.5pt x 401.5pt>
+<VSCode.png, id=382, 401.5pt x 401.5pt>
 File: VSCode.png Graphic file (type png)
  <use VSCode.png>
 Package pdftex.def Info: VSCode.png used on input line 410.
 (pdftex.def)             Requested size: 28.9043pt x 28.90755pt.
 
-<pgAdmin.jpg, id=366, 350.30875pt x 100.375pt>
+<pgAdmin.jpg, id=383, 350.30875pt x 100.375pt>
 File: pgAdmin.jpg Graphic file (type jpg)
  <use pgAdmin.jpg>
 Package pdftex.def Info: pgAdmin.jpg used on input line 411.
 (pdftex.def)             Requested size: 100.8867pt x 28.90755pt.
 
-<eclipse.jpg, id=367, 276.03125pt x 183.68625pt>
+<eclipse.jpg, id=384, 276.03125pt x 183.68625pt>
 File: eclipse.jpg Graphic file (type jpg)
  <use eclipse.jpg>
 Package pdftex.def Info: eclipse.jpg used on input line 413.
@@ -935,7 +954,7 @@ Overfull \hbox (31.182pt too wide) in paragraph at lines 442--444
 gramme des classes nécés-saires à l'implémentation.
  []
 
-<DiagClass1.jpg, id=382, 678.535pt x 327.2225pt>
+<DiagClass1.jpg, id=399, 678.535pt x 327.2225pt>
 File: DiagClass1.jpg Graphic file (type jpg)
  <use DiagClass1.jpg>
 Package pdftex.def Info: DiagClass1.jpg used on input line 448.
@@ -945,7 +964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
 
-<UseCaseDiagram2.png, id=383, 906.38625pt x 448.67625pt>
+<UseCaseDiagram2.png, id=400, 906.38625pt x 448.67625pt>
 File: UseCaseDiagram2.png Graphic file (type png)
 
 <use UseCaseDiagram2.png>
@@ -978,7 +997,7 @@ icate ignored
                                                   \fi \fi 
 l.566 \subsubsection{Conception}
                                 ]
-<DiagSeqAjouterUtilisateur.jpg, id=417, 1029.8475pt x 795.97375pt>
+<DiagSeqAjouterUtilisateur.jpg, id=434, 1029.8475pt x 795.97375pt>
 File: DiagSeqAjouterUtilisateur.jpg Graphic file (type jpg)
 
 <use DiagSeqAjouterUtilisateur.jpg>
@@ -991,7 +1010,7 @@ Package pdftex.def Info: DiagSeqAjouterUtilisateur.jpg used on input line 573.
                                                   \fi \fi 
 l.577 ...ce "consulter la liste des utilisateurs"}
                                                   ]
-<DiagSeq2.jpg, id=426, 949.5475pt x 688.5725pt>
+<DiagSeq2.jpg, id=443, 949.5475pt x 688.5725pt>
 File: DiagSeq2.jpg Graphic file (type jpg)
  <use DiagSeq2.jpg>
 Package pdftex.def Info: DiagSeq2.jpg used on input line 580.
@@ -1008,7 +1027,7 @@ Overfull \hbox (8.30188pt too wide) in paragraph at lines 586--588
 -cep-tion avec les di-a-grammes de cas d'utilisation
  []
 
-<DiagClasseModuleAssistance.PNG, id=431, 895.09406pt x 557.08125pt>
+<DiagClasseModuleAssistance.PNG, id=448, 895.09406pt x 557.08125pt>
 File: DiagClasseModuleAssistance.PNG Graphic file (type png)
 
 <use DiagClasseModuleAssistance.PNG>
@@ -1027,7 +1046,7 @@ Overfull \hbox (87.62868pt too wide) in paragraph at lines 592--593
                                                   \fi \fi 
 l.596 O
        n va prendre l'exemple de gestion des remoqueurs. <./DiagSeq2.jpg>]
-<UseCaseDiagram2.jpg, id=436, 1049.9225pt x 728.7225pt>
+<UseCaseDiagram2.jpg, id=453, 1049.9225pt x 728.7225pt>
 File: UseCaseDiagram2.jpg Graphic file (type jpg)
 
 <use UseCaseDiagram2.jpg>
@@ -1039,7 +1058,7 @@ Overfull \hbox (30.03673pt too wide) in paragraph at lines 599--600
  []
 
 [24 <./DiagClasseModuleAssistance.PNG>] [25 <./UseCaseDiagram2.jpg>]
-<DiagSeqAjouterRemorqueur.jpg, id=451, 1029.8475pt x 795.97375pt>
+<DiagSeqAjouterRemorqueur.jpg, id=468, 1029.8475pt x 795.97375pt>
 File: DiagSeqAjouterRemorqueur.jpg Graphic file (type jpg)
 
 <use DiagSeqAjouterRemorqueur.jpg>
@@ -1076,74 +1095,167 @@ Underfull \hbox (badness 10000) in paragraph at lines 662--663
 
  []
 
-[29
+<authen.PNG, id=487, 500.62032pt x 590.205pt>
+File: authen.PNG Graphic file (type png)
+ <use authen.PNG>
+Package pdftex.def Info: authen.PNG used on input line 682.
+(pdftex.def)             Requested size: 367.8102pt x 433.62pt.
+ [29
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 676.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.678 \end{titlepage}
-                      [1]
-<methode-scrum.jpg, id=480, 451.6875pt x 326.72063pt>
-File: methode-scrum.jpg Graphic file (type jpg)
- <use methode-scrum.jpg>
-Package pdftex.def Info: methode-scrum.jpg used on input line 698.
-(pdftex.def)             Requested size: 249.77975pt x 180.67499pt.
+<authenErreur.PNG, id=492, 613.54219pt x 564.60938pt>
+File: authenErreur.PNG Graphic file (type png)
+ <use authenErreur.PNG>
+Package pdftex.def Info: authenErreur.PNG used on input line 690.
+(pdftex.def)             Requested size: 471.2119pt x 433.62pt.
 
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 712--715
-
+Overfull \hbox (1.45688pt too wide) in paragraph at lines 690--691
+ [][] 
  []
 
-[42pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.718 \subsection*{Backlog de produit : }
+l.694 
+       <./authen.PNG>]
+<ajoutUtilisateur.PNG, id=498, 958.3303pt x 667.74469pt>
+File: ajoutUtilisateur.PNG Graphic file (type png)
+
+<use ajoutUtilisateur.PNG>
+Package pdftex.def Info: ajoutUtilisateur.PNG used on input line 698.
+(pdftex.def)             Requested size: 539.35193pt x 375.80377pt.
+
+Overfull \hbox (69.59691pt too wide) in paragraph at lines 698--699
+ [][] 
+ []
+
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.702 
+       <./authenErreur.PNG>]
+<listeUtilisateur.PNG, id=505, 962.09438pt x 640.64343pt>
+File: listeUtilisateur.PNG Graphic file (type png)
+
+<use listeUtilisateur.PNG>
+Package pdftex.def Info: listeUtilisateur.PNG used on input line 706.
+(pdftex.def)             Requested size: 564.37172pt x 375.80377pt.
+
+Overfull \hbox (94.6167pt too wide) in paragraph at lines 706--707
+ [][] 
+ []
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.710 
+       <./ajoutUtilisateur.PNG>]
+<gestionContrat.PNG, id=511, 950.04938pt x 642.14906pt>
+File: gestionContrat.PNG Graphic file (type png)
+
+<use gestionContrat.PNG>
+Package pdftex.def Info: gestionContrat.PNG used on input line 714.
+(pdftex.def)             Requested size: 556.00134pt x 375.80377pt.
+
+Overfull \hbox (86.24632pt too wide) in paragraph at lines 714--715
+ [][] 
+ []
+
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.718 
+       <./listeUtilisateur.PNG>]
+<importCSV.PNG, id=517, 959.83594pt x 640.64343pt>
+File: importCSV.PNG Graphic file (type png)
+ <use importCSV.PNG>
+Package pdftex.def Info: importCSV.PNG used on input line 722.
+(pdftex.def)             Requested size: 584.70819pt x 390.25755pt.
+
+Overfull \hbox (114.95317pt too wide) in paragraph at lines 722--723
+ [][] 
+ []
+
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.18}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.726 
+       <./gestionContrat.PNG>] [35pdfTeX warning (ext4): destination with the s
+ame identifier (name{figure.19}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.727 \begin{titlepage}
+                       \centering <./importCSV.PNG>]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 729.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.731 \end{titlepage}
+                      [1]
+<methode-scrum.jpg, id=533, 451.6875pt x 326.72063pt>
+File: methode-scrum.jpg Graphic file (type jpg)
+ <use methode-scrum.jpg>
+Package pdftex.def Info: methode-scrum.jpg used on input line 751.
+(pdftex.def)             Requested size: 249.77975pt x 180.67499pt.
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 765--768
+
+ []
+
+[42pdfTeX warning (ext4): destination with the same identifier (name{figure.20}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.771 \subsection*{Backlog de produit : }
                                           <./methode-scrum.jpg>]
-Overfull \hbox (5.37169pt too wide) in paragraph at lines 727--730
+Overfull \hbox (5.37169pt too wide) in paragraph at lines 780--783
 \T1/phv/m/n/10 Spring Boot fa-cilite la créa-tion d'applications et de ser-vice
 s de pro-duc-tion, avec un min-i-mum d'encombrement
  []
 
 [43] [44]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 739.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 792.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 749.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 802.
  [45
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 749.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 802.
 
 (rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 749.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 749.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 802.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 802.
+Package rerunfilecheck Info: File `rapport.out' has not changed.
+(rerunfilecheck)             Checksum: 9421C3C578CAF1DD204B883A45CCDF74;3840.
 
 
-Package rerunfilecheck Warning: File `rapport.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `rapport.out':
-(rerunfilecheck)             Before: B968F3171383C4B8E3550BA7E29480EF;3758
-(rerunfilecheck)             After:  9421C3C578CAF1DD204B883A45CCDF74;3840.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 749.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 802.
  ) 
 Here is how much of TeX's memory you used:
- 7841 strings out of 493323
- 109440 string characters out of 3139069
- 308299 words of memory out of 3000000
- 11092 multiletter control sequences out of 15000+200000
+ 7884 strings out of 493323
+ 110151 string characters out of 3139069
+ 309272 words of memory out of 3000000
+ 11117 multiletter control sequences out of 15000+200000
  34003 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,12n,43p,795b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1155,9 +1267,9 @@ m Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvet
 ic/uhvro8a.pfb>
-Output written on rapport.pdf (41 pages, 885393 bytes).
+Output written on rapport.pdf (47 pages, 1113178 bytes).
 PDF statistics:
- 637 PDF objects out of 1000 (max. 8388607)
- 152 named destinations out of 1000 (max. 500000)
- 416 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 692 PDF objects out of 1000 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
+ 454 words of extra memory for PDF output out of 10000 (max. 10000000)
 
